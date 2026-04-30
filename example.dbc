@@ -1,0 +1,22 @@
+VERSION ""
+
+NS_ :
+    BA_
+    BA_DEF_
+    BA_DEF_DEF_
+    BA_DEF_DEF_REL_
+    BA_DEF_REL_
+    BA_SGTYPE_
+    BO_TX_BU_
+    BU_
+    CM_
+    EV_
+    SG_
+    VAL_
+
+BS_:
+BU_: ECU1 ECU2
+
+BO_ 256 ExampleMsg: 8 ECU1
+ SG_ EngineSpeed : 0|16@1+ (1,0) [0|65535] "rpm" Vector__XXX
+ SG_ VehicleSpeed : 16|16@1+ (0.1,0) [0|6553.5] "km/h" Vector__XXX

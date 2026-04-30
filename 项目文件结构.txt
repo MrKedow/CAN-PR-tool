@@ -1,0 +1,9 @@
+can_replay_tool/
+├── example.dbc          # DBC 文件
+├── trace.asc            # 示例 CAN 日志
+├── can_data.db          # SQLite 数据库（自动生成）
+├── database.py          # 数据库操作
+├── parser.py            # 日志解析入库
+├── replay.py            # 历史数据回灌
+├── candump_logger.py    # 实时记录工具
+└── README.md            # 使用说明
