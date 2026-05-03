@@ -54,11 +54,13 @@ python parser.py
 ```
 
 脚本会读取 `trace.asc`，解析每条报文并通过 `DBC` 解码为物理信号，将结果写入 `can_data.db`。
+<img width="960" height="1140" alt="image" src="https://github.com/user-attachments/assets/6e8706b7-8432-4073-8d12-92443720ac7b" />
 
 ### 第三步：查看解析结果
 ```bash
 sqlite3 can_data.db "SELECT * FROM can_signals LIMIT 20;"
 ```
+<img width="960" height="1140" alt="image" src="https://github.com/user-attachments/assets/ca6e5e88-49ab-498a-ad1a-a289cbe1328d" />
 
 ### 第四步：回灌到虚拟 CAN 总线
 
@@ -73,6 +75,7 @@ python replay.py
 ```
 
 `candump` 窗口将显示按原始时序回放的 CAN 报文。
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/eb8fff51-5534-41df-84c9-96a5f41a483d" />
 
 ## 项目结构
 
